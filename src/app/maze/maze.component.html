@@ -1,0 +1,13 @@
+<div style="text-align: center;">
+<div style="margin-bottom: 50px;">
+<input min="2" type="number"   [(ngModel)]="rows" #ctrl="ngModel" required/>
+<input min="2" type="number"   [(ngModel)]="cols" #ctrl="ngModel" required/>
+
+<button (click)="setValue()">Create Maze</button>
+
+<div>Score {{steps}}</div>
+
+
+</div>
+<canvas id="maze"></canvas>
+</div>
